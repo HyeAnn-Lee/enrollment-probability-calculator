@@ -39,7 +39,7 @@ const ProbabilityCalculator = () => {
     
     // Calculate sum for k from 0 to M-1
     for (let k = 0; k < M; k++) {
-      const term = combination((M+N), k) * Math.pow(p, k) * Math.pow(1 - p, (M+N) - k);
+      const term = combination((M+N-1), k) * Math.pow(p, k) * Math.pow(1 - p, (M+N-1) - k);
       probability += term;
     }
     
